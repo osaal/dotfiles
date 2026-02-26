@@ -12,3 +12,5 @@ zstyle :compinstall filename '/home/osaal/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+path+=('/home/osaal/.cargo/bin')
+export PATH
