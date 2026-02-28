@@ -1,0 +1,17 @@
+#! /usr/bin/env bash
+
+# Does NOT handle NixOS configuration files due to need for sudo
+# Currently does not handle: alacritty (unused), zsh (unused)
+
+### $HOME/.config
+# Folders
+ln -s ${HOME}/dotfiles/btop ${HOME}/.config
+ln -s ${HOME}/dotfiles/hypr ${HOME}/.config
+ln -s ${HOME}/dotfiles/kitty ${HOME}/.config
+ln -s ${HOME}/dotfiles/nvim ${HOME}/.config
+ln -s ${HOME}/dotfiles/rofi ${HOME}/.config
+ln -s ${HOME}/dotfiles/waybar ${HOME}/.config
+ln -s ${HOME}/dotfiles/yazi ${HOME}/.config
+# Single files
+ln -s ${HOME}/dotfiles/electron-flags.conf ${HOME}/.config
+ln -s ${HOME}/dotfiles/pavucontrol.ini ${HOME}/.config

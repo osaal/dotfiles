@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Links NixOS files to their correct locations from the ./nixos subfolder
+$usr = $1 # Name of the user who holds the dotfiles
+ln -s /home/${usr}/dotfiles/nixos/configuration.nix /etc/nixos
