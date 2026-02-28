@@ -26,7 +26,7 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = "nvim %s", desc = "nvim",      for = "unix", block = true },
+	{ run = "nvim %s1", desc = "nvim",      for = "linux", block = true },
 ]
 play = [
 	{ run = "xdg-open %s1",    desc = "Play", for = "linux", orphan = true },

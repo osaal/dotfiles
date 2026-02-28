@@ -63,6 +63,7 @@
       ripgrep # File content searching
       fzf # File subtree navigation
       zoxide # Historical directories navigation
+      file # File information
     ];
   };
 

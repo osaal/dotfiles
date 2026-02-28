@@ -15,3 +15,4 @@ ln -s ${HOME}/dotfiles/yazi ${HOME}/.config
 # Single files
 ln -s ${HOME}/dotfiles/electron-flags.conf ${HOME}/.config
 ln -s ${HOME}/dotfiles/pavucontrol.ini ${HOME}/.config
+ln -s ${HOME}/dotfiles/.bashrc ${HOME}
