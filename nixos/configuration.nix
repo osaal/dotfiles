@@ -4,6 +4,7 @@
   imports =
     [ 
       /etc/nixos/hardware-configuration.nix
+      ./software.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -55,38 +56,7 @@
     isNormalUser = true;
     description = "Oliver Saal";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      discord
-      btop
-      yazi # File explorer TUI. Revdep: fd, rg, fzf, zoxide
-      fd # File searching
-      ripgrep # File content searching
-      fzf # File subtree navigation
-      zoxide # Historical directories navigation
-      file # File information
-    ];
   };
-
-  nixpkgs.config.allowUnfree = true;
-
-  programs.firefox.enable = true;
-  programs.hyprland.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    neovim 
-    wget
-    git
-    kitty # Terminal
-    rofi # App launcher
-    waybar # Status bar
-    dunst # Notification daemon
-    hyprpolkitagent # Authentication handler
-    kdePackages.sddm # Login manager (SDDM)
-    hyprcursor # Cursors
-    rose-pine-hyprcursor # One particular cursor
-    jq # JSON processor, for hypr_swap_monitors.sh script
-    pavucontrol # PulseAudio Volume Control, enables Waybar widget
-  ];
 
   # Ensure that SDDM is not hanging on reading fingerprints
   security.pam.services.login.fprintAuth = false;
@@ -100,28 +70,6 @@
       user = "osaal";
     };
   };
-
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      hyvi="nvim /home/osaal/.config/hypr/hyprland.conf";
-      nivi="sudo nvim /home/osaal/dotfiles/nixos/configuration.nix"; 
-      switch="sudo nixos-rebuild switch";
-    };
-  };
-
-  programs.git = {
-    enable = true;
-    config = {
-      init = { defaultBranch = "main"; };
-      gpg.format = "ssh";
-    };
-  };
-
-  fonts.packages = with pkgs; [
-    font-awesome_4
-    nerd-fonts.fira-mono
-  ];
 
   system.stateVersion = "25.11"; 
 }
