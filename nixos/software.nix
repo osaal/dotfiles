@@ -9,6 +9,7 @@
     users.users.osaal.packages = with pkgs; [
         discord
         btop
+        obsidian
         yazi    # File explorer TUI. Dep: fd, ripgrep, fzf, zoxide
         fd      # File searching
         fzf     # File subtree navigation
