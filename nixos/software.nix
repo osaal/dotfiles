@@ -23,6 +23,7 @@
         neovim
         wget
         git
+        rustup
         kitty               # Terminal
         rofi                # App launcher
         waybar              # Status bar
