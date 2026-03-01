@@ -10,6 +10,7 @@
         discord
         btop
         obsidian
+        bolt-launcher
         yazi    # File explorer TUI. Dep: fd, ripgrep, fzf, zoxide
         fd      # File searching
         fzf     # File subtree navigation
