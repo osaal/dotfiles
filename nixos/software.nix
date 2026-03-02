@@ -35,6 +35,7 @@
         jq                  # JSON processor. Revdep: hypr_swap_monitors.sh
         pavucontrol         # PulseAudio Volume Control for Waybar widget
         file                # File information
+        swaybg              # Wallpaper engine
     ];
 
     ### Fonts ###
