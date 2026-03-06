@@ -36,6 +36,8 @@
         pavucontrol         # PulseAudio Volume Control for Waybar widget
         file                # File information
         swaybg              # Wallpaper engine
+        slurp               # Region selector
+        grim                # Image capturing
     ];
 
     ### Fonts ###
