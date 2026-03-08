@@ -26,6 +26,7 @@
         zig
         clang
         devenv              # For software development environments
+        direnv              # Automatically enable devenvs in folders
         kitty               # Terminal
         rofi                # App launcher
         waybar              # Status bar
