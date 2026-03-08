@@ -24,6 +24,7 @@
         wget
         git
         rustup
+        zig
         kitty               # Terminal
         rofi                # App launcher
         waybar              # Status bar
