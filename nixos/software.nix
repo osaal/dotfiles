@@ -25,6 +25,7 @@
         git
         zig
         clang
+        devenv              # For software development environments
         kitty               # Terminal
         rofi                # App launcher
         waybar              # Status bar

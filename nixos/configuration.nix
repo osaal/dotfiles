@@ -82,5 +82,8 @@
     };
   };
 
+  # Make me a trusted user for using the Cachix binary cache for devenv
+  nix.settings.trusted-users = [ "root" "osaal" ];
+
   system.stateVersion = "25.11"; 
 }
