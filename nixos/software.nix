@@ -23,8 +23,8 @@
         neovim
         wget
         git
-        rustup
         zig
+        clang
         kitty               # Terminal
         rofi                # App launcher
         waybar              # Status bar
