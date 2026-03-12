@@ -41,6 +41,7 @@
         swaybg              # Wallpaper engine
         slurp               # Region selector
         grim                # Image capturing
+        vscode              # Code editing (while I try to get nvim functional...)
     ];
 
     ### Fonts ###
@@ -63,6 +64,7 @@
         config = {
             init = { defaultBranch = "main"; };
             gpg.format = "ssh";
+            push.autoSetupRemote = true;
         };
     };
 }
