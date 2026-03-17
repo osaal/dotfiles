@@ -52,6 +52,11 @@
     pulse.enable = true;
   };
 
+  services.asusd = {
+    enable = true;
+    enableUserService = true;
+  };
+
   hardware.bluetooth = {
 	enable = true;
 	powerOnBoot = true;

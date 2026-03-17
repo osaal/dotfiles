@@ -43,6 +43,7 @@
         slurp               # Region selector
         grim                # Image capturing
         vscode              # Code editing (while I try to get nvim functional...)
+        asusctl             # Utilities for ASUS ROG laptops
     ];
 
     ### Fonts ###
