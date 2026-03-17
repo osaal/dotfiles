@@ -16,6 +16,7 @@
         fzf     # File subtree navigation
         ripgrep # File content searching
         zoxide  # Historical directories navigation
+        tree    # Directory tree listing
     ];
 
     ### System packages ###
@@ -65,6 +66,12 @@
             init = { defaultBranch = "main"; };
             gpg.format = "ssh";
             push.autoSetupRemote = true;
+        };
+    };
+    programs.light = {
+        enable = true;
+        brightnessKeys = {
+            enable = true;
         };
     };
 }

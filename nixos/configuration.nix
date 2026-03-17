@@ -66,7 +66,7 @@
   users.users.osaal = {
     isNormalUser = true;
     description = "Oliver Saal";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "video" ];
   };
 
   # Ensure that SDDM is not hanging on reading fingerprints
