@@ -17,6 +17,7 @@
         ripgrep # File content searching
         zoxide  # Historical directories navigation
         tree    # Directory tree listing
+        p7zip   # 7zip Unix fork
     ];
 
     ### System packages ###

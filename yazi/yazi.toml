@@ -40,11 +40,14 @@ reveal = [
 	{ run = "clear; exiftool %s1; echo 'Press enter to exit'; read _", desc = "Show EXIF", for = "unix", block = true },
 ]
 extract = [
-	{ run = "ya pub extract --list %s", desc = "Extract here" },
+	{ run = "7z x %S1", block = true, desc = "Extract into folder" },
 ]
 download = [
 	{ run = "ya emit download --open %S", desc = "Download and open" },
 	{ run = "ya emit download %S",        desc = "Download" },
+]
+pdf = [
+    { run = 'firefox "$@"', orphan = true }
 ]
 
 [open]
@@ -66,6 +69,8 @@ rules = [
 	{ mime = "inode/empty", use = [ "edit", "reveal" ] },
 	# Virtual file system
 	{ mime = "vfs/{absent,stale}", use = "download" },
+    # PDF
+    { mime = "application/pdf", use = "pdf" },
 	# Fallback
 	{ url = "*", use = [ "open", "reveal" ] },
 ]

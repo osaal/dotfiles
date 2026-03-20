@@ -13,6 +13,7 @@ ln -s ${HOME}/dotfiles/rofi ${HOME}/.config
 ln -s ${HOME}/dotfiles/waybar ${HOME}/.config
 ln -s ${HOME}/dotfiles/yazi ${HOME}/.config
 ln -s ${HOME}/dotfiles/bolt-launcher ${HOME}/.config
+ln -s ${HOME}/dotfiles/dunst ${HOME}/.config
 # Single files
 ln -s ${HOME}/dotfiles/electron-flags.conf ${HOME}/.config
 ln -s ${HOME}/dotfiles/.bashrc ${HOME}
