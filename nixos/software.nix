@@ -46,6 +46,7 @@
         vscode              # Code editing (while I try to get nvim functional...)
         asusctl             # Utilities for ASUS ROG laptops
         hyprlock            # Lock screen
+        imv                 # Image viewer
     ];
 
     ### Fonts ###

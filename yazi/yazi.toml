@@ -49,6 +49,9 @@ download = [
 pdf = [
     { run = 'firefox "$@"', orphan = true }
 ]
+view = [
+    { run = "imv $@", orphan = true, desc = "View with Imv", for = "linux" }
+]
 
 [open]
 rules = [
@@ -57,7 +60,7 @@ rules = [
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "view", "open", "reveal" ] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive
