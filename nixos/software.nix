@@ -11,6 +11,7 @@
         btop
         obsidian
         bolt-launcher
+        zotero
         yazi    # File explorer TUI. Dep: fd, ripgrep, fzf, zoxide
         fd      # File searching
         fzf     # File subtree navigation
@@ -47,6 +48,7 @@
         asusctl             # Utilities for ASUS ROG laptops
         hyprlock            # Lock screen
         imv                 # Image viewer
+        dragon-drop         # Drag-and-drop through a CLI
     ];
 
     ### Fonts ###
@@ -72,6 +74,7 @@
             push.autoSetupRemote = true;
         };
     };
+    # TODO: Switch to `brightnessctl` or `acpilight` by nixpkgs:26.05 - `light` is being removed.
     programs.light = {
         enable = true;
         brightnessKeys = {
