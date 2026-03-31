@@ -118,6 +118,9 @@ preloaders = [
 	{ mime = "font/*", run = "font" },
 	{ mime = "application/ms-opentype", run = "font" },
 ]
+prepend_previewers = [
+    { url = '**/.git/', run = 'preview-git' },
+]
 previewers = [
 	{ url = "*/", run = "folder" },
 	# Code
