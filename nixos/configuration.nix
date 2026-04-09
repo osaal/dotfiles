@@ -57,6 +57,9 @@
     enableUserService = true;
   };
 
+  services.printing.enable = true;
+  services.ipp-usb.enable = true;
+
   hardware.bluetooth = {
 	enable = true;
 	powerOnBoot = true;

@@ -49,6 +49,7 @@
         hyprlock            # Lock screen
         imv                 # Image viewer
         dragon-drop         # Drag-and-drop through a CLI
+        sqlite              # SQLite... duh.
     ];
 
     ### Fonts ###

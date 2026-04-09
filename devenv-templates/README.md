@@ -1,8 +1,8 @@
 # Templates for quickly initializing devenv
 
-Start by calling `devenv init` in the project folder.
+Copy all files in this directory to your project folder.
 
-Replace the auto-generated `devenv.nix` with the template from this folder.
+Call `devenv init`, and say [n]o to replacing the existing `devenv.nix`.
 
 ## Language-specific notes
 
@@ -17,3 +17,5 @@ NOTE: You may need to activate `rust-overlay` the first time:
 ```bash
 devenv inputs add rust-overlay github:oxalica/rust-overlay --follows nixpkgs
 ```
+
+This should already exist in `devenv.yaml`, but if it does not, use the above command.

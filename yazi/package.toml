@@ -1,0 +1,12 @@
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-git"
+rev = "1d28640"
+hash = "52f20cafe2faf4901910ef77da8956e8"
+
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-sqlite"
+rev = "1d28640"
+hash = "e21bd1066bfd09c92fd0201cffec287f"
+
+[flavor]
+deps = []

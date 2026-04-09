@@ -120,6 +120,8 @@ preloaders = [
 ]
 prepend_previewers = [
     { url = '**/.git/', run = 'preview-git' },
+    { url = '*.sqlite3', run = 'preview-sqlite' },
+    { mime = 'application/sqlite3', run = 'preview-sqlite' },
 ]
 previewers = [
 	{ url = "*/", run = "folder" },
