@@ -19,6 +19,7 @@
         zoxide  # Historical directories navigation
         tree    # Directory tree listing
         p7zip   # 7zip Unix fork
+        subversion  # SVN source management (mainly for R source code)
     ];
 
     ### System packages ###
