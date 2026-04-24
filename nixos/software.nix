@@ -20,6 +20,7 @@
         tree    # Directory tree listing
         p7zip   # 7zip Unix fork
         subversion  # SVN source management (mainly for R source code)
+        steam   # Vidja
     ];
 
     ### System packages ###
@@ -52,6 +53,7 @@
         dragon-drop         # Drag-and-drop through a CLI
         sqlite              # SQLite... duh.
         brightnessctl       # Brightness control
+        nodejs_25           # Node.js version 25.X
     ];
 
     ### Fonts ###

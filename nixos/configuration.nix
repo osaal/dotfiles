@@ -72,6 +72,12 @@
 
   services.blueman.enable = true;
 
+  # For Steam to work
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   users.users.osaal = {
     isNormalUser = true;
     description = "Oliver Saal";

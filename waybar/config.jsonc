@@ -1,6 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "spacing": 4, // Gaps between modules (4px)
+    "margin": "20 20 -10 20",
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -35,7 +36,10 @@
         "icon-size": 24,
         "rewrite": {
             "(.*) - Nvim": "📗 $1",
-            "(.*) - Mozilla Firefox": "🌐 $1"
+            // Note the special dash!
+            "(.*) — Mozilla Firefox": "🌐 $1",
+            // Terminal titled "user@domain: path"
+            "^([a-zA-Z0-9._-]+)@([a-zA-Z0-9.-]+): ?(.*)$": "🖥️ $1@$2: $3"
         }
     },
     "clock": {
