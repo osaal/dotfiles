@@ -7,6 +7,8 @@
       ./software.nix
     ];
 
+  nix.settings.experimental-features = [ "nix-command" ];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "osaal"; 
@@ -54,7 +56,6 @@
 
   services.asusd = {
     enable = true;
-    enableUserService = true;
   };
 
   services.printing.enable = true;

@@ -51,6 +51,7 @@
         imv                 # Image viewer
         dragon-drop         # Drag-and-drop through a CLI
         sqlite              # SQLite... duh.
+        brightnessctl       # Brightness control
     ];
 
     ### Fonts ###
@@ -77,10 +78,11 @@
         };
     };
     # TODO: Switch to `brightnessctl` or `acpilight` by nixpkgs:26.05 - `light` is being removed.
-    programs.light = {
+    services.actkbd = {
         enable = true;
-        brightnessKeys = {
-            enable = true;
-        };
+        bindings = [
+            { keys = [ 237 ]; events = [ "key" ]; command = "/run/wrappers/bin/brightnessctl 5%-"; }
+            { keys = [ 238 ]; events = [ "key" ]; command = "/run/wrappers/bin/brightnessctl 5%+"; }
+        ];
     };
 }
