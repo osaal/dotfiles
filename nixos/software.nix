@@ -69,6 +69,7 @@
             hyvi="nvim /home/osaal/.config/hypr/hyprland.conf";
             nivi="sudo nvim /etc/nixos/configuration.nix";
             switch="sudo nixos-rebuild switch";
+            wayreset="pkill waybar && hyprctl dispatch exec waybar";
         };
     };
     programs.git = {
