@@ -54,6 +54,7 @@
         sqlite              # SQLite... duh.
         brightnessctl       # Brightness control
         nodejs_25           # Node.js version 25.X
+        qemu                # Virtualization
     ];
 
     ### Fonts ###
@@ -87,5 +88,11 @@
             { keys = [ 237 ]; events = [ "key" ]; command = "/run/wrappers/bin/brightnessctl 5%-"; }
             { keys = [ 238 ]; events = [ "key" ]; command = "/run/wrappers/bin/brightnessctl 5%+"; }
         ];
+    };
+
+    virtualisation.podman = {
+        enable = true;
+        dockerCompat = true;
+        defaultNetwork.settings.dns_enabled = true;
     };
 }
