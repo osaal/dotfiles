@@ -21,6 +21,7 @@
         p7zip   # 7zip Unix fork
         subversion  # SVN source management (mainly for R source code)
         steam   # Vidja
+        quarto  # Scientific writing
     ];
 
     ### System packages ###
@@ -30,6 +31,7 @@
         git
         zig
         clang
+        rustup
         devenv              # For software development environments
         direnv              # Automatically enable devenvs in folders
         kitty               # Terminal
@@ -55,6 +57,7 @@
         brightnessctl       # Brightness control
         nodejs_25           # Node.js version 25.X
         qemu                # Virtualization
+        overskride          # Bluetooth GUI
     ];
 
     ### Fonts ###
