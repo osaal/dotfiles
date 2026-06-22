@@ -1,3 +1,5 @@
+-- Based on ad1822/hyprdots@e7d1663
+
 hl.monitor({
     output = "eDP-1",
     mode = "2560x1440",

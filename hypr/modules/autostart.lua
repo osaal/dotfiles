@@ -1,4 +1,4 @@
-# Based on ad1822/hyprdots@e7d1663
+-- Based on ad1822/hyprdots@e7d1663
 
 local vars = require("modules.variables")
 
