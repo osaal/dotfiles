@@ -23,3 +23,12 @@ hl.window_rule({
     no_initial_focus = true,
 })
 
+hl.workspace_rule({
+    workspace = "1",
+    monitor = "eDP-1",
+})
+
+hl.workspace_rule({
+    workspace = "2",
+    monitor = "DP-1",
+})
