@@ -7,6 +7,7 @@ local variables = {
     browser = "firefox",
     taskManager = "btop",
     note = "obsidian",
+    mainMod = "SUPER",
 }
 
 return variables
