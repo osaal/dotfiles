@@ -10,11 +10,6 @@ $fileManager = y
 ### ENVIRONMENT VARIABLES ###
 #############################
 
-env = HYPRCURSOR_THEME,rose-pine-hyprcursor
-env = XCURSOR_SIZE,24
-env = HYPRCURSOR_SIZE,24
-env = NIXOS_OZONE_WL,1 # For Xwayland proper scaling, as with below
-env = EDITOR,nvim
 xwayland {
     force_zero_scaling = true
 }

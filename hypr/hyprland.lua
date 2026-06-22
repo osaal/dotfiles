@@ -3,3 +3,4 @@
 require("modules.monitor")
 require("modules.autostart")
 require("modules.rules")
+require("modules.env")
