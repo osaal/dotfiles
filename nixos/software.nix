@@ -55,7 +55,7 @@
         dragon-drop         # Drag-and-drop through a CLI
         sqlite              # SQLite... duh.
         brightnessctl       # Brightness control
-        nodejs_25           # Node.js version 25.X
+        nodejs_26           # Node.js version 26.X
         qemu                # Virtualization
         overskride          # Bluetooth GUI
     ];
