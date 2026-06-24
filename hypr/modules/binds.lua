@@ -13,22 +13,25 @@ hl.bind(
     keys(vars.mainMod, "SHIFT S"),
     hl.dsp.exec_cmd("grim -g '$(slurp)' /home/osaal/Pictures/$(date + '%Y-%m-%d_%H:%M:%S.png')")
 )
-
 -- Lock screen using Hyprlock
 hl.bind(
     keys(vars.mainMod, "L"),
     hl.dsp.exec_cmd("hyprlock --grace 5")
 )
+-- Laptop multimedia keys for volume and LCD brightness
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 
 -- Program launchers
 hl.bind(
     keys(vars.mainMod, "E"),
-    hl.dsp.exec_cmd(vars.terminal .. " bash -ci " .. vars.fileManager),
+    hl.dsp.exec_cmd(vars.terminal .. " bash -ci " .. vars.fileManager)
 )
 
 hl.bind(
     keys(vars.mainMod, "T"),
-    hl.dsp.exec_cmd(vars.terminal),
+    hl.dsp.exec_cmd(vars.terminal)
 )
 
 hl.bind(
@@ -39,46 +42,32 @@ hl.bind(
 -- Process management
 hl.bind(
     keys(vars.mainMod, "Q"),
-    hl.dsp.exec_cmd("kill -9 $(hyprctl activewindow j | jq '.pid')"),
+    hl.dsp.exec_cmd("kill -9 $(hyprctl activewindow j | jq '.pid')")
 )
 
 -- Window management
 hl.bind(
     keys(vars.mainMod, "C"),
-    hl.dsp.window.kill(),
+    hl.dsp.window.kill()
 )
 
 hl.bind(
     keys(vars.mainMod, "V"),
-    hl.dsp.window.float(),
+    hl.dsp.window.float({}),
 )
 
-hl.bind(
-    keys(vars.mainMod, "P"),
-    hl.dsp.window.pseudo(),
-)
-
--- START: Workspace management
--- Move focus to window in direction
-local window_directions = {
-    left = "l",
-    right = "r",
-    up = "u",
-    down = "d",
-}
-
-local function add_focus_direction(k, v)
-    hl.bind(
-        keys(vars.mainMod, k),
-        hl.dsp.workspace.focus({ direction = l }),
-    )
+-- Workspace management
+-- Switch workspaces with mainMod + [0-9]
+-- Move active window to workspace with mainMo + SHIFT + [0-9]
+for i = 1, 10 do
+    local key = i % 10 -- 10 maps to key 0
+    hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i }))
+    hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
 
-for k, v in pairs(window_directions) do
-    add_focus_direction(k, v)
-end
-
--- END: Workspace management
+-- Move/resize windows with mainMod + LMB/RMB and dragging
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Monitor management
 hl.bind(

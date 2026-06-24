@@ -10,6 +10,7 @@ opt.tabstop = 4             -- Number of spaces in a tab
 opt.shiftwidth = 4          -- Number of spaces in auto-indentation
 opt.softtabstop = 4         -- Number of spaces for <Tab> in Insert mode
 opt.list = true             -- Set list mode for showing non-printing chars
+opt.clipboard = 'unnamed'   -- Paste from system clipboard with <p>
 opt.listchars = {
     tab = "<->",
     space = "·",
@@ -25,3 +26,5 @@ map("v", "<Tab>", ">gv")
 map("v", "<S-Tab>", "<gv")
 map("v", "<lt>", "<gv")
 map("v", ">", ">gv")
+map({ "n", "x" }, "<C-c>", '"+y')   -- Copy to system clipboard (normal, select)
+map({ "n", "x" }, "<C-v>", '"+p')   -- Paste from system clipboard (normal, select)
