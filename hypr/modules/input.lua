@@ -9,6 +9,11 @@ hl.config({
             natural_scroll = false,
         },
     },
+    cursor = {
+        -- Fixes flickering cursor on NixOS
+        inactive_timeout = 0,
+        no_hardware_cursors = true,
+    },
 })
 
 -- Three-fingered L/R swipe: change workspace

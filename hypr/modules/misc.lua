@@ -6,4 +6,8 @@ hl.config({
         disable_hyprland_logo = false,
         disable_splash_rendering = false,
     },
+
+    xwayland = {
+        force_zero_scaling = true,
+    },
 })
