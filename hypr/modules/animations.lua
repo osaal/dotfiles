@@ -1,4 +1,12 @@
 -- Based on ad1822/hyprdots@e7d1663
+-- Main motion curve
+hl.curve("motion", {
+    type = "bezier",
+    points = {
+        { 0.05, 0.9 },
+        { 0.1, 1.2 },
+    },
+})
 
 hl.config({
     animations = {
