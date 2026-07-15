@@ -39,6 +39,11 @@ hl.bind(
     hl.dsp.exec_cmd(vars.menu)
 )
 
+hl.bind(
+    keys(vars.mainMod, "n"),
+    hl.dsp.exec_cmd(vars.quickText)
+)
+
 -- Process management
 hl.bind(
     keys(vars.mainMod, "q"),

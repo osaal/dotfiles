@@ -6,8 +6,8 @@
 follow = mouse
 width = 350
 height = (0, 300)
-origin = top-right
-offset = (35, 35)
+origin = top-center
+offset = (0, 35)
 indicate_hidden = yes
 notification_limit = 5
 gap_size = 12

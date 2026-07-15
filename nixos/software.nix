@@ -22,6 +22,7 @@
         subversion  # SVN source management (mainly for R source code)
         steam   # Vidja
         quarto  # Scientific writing
+        unzip   # ...yeah
     ];
 
     ### System packages ###

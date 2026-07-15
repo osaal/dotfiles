@@ -8,6 +8,7 @@ local variables = {
     taskManager = "btop",
     note = "obsidian",
     mainMod = "SUPER",
+    quickText = "nvim",
 }
 
 return variables
