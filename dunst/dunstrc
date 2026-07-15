@@ -1,75 +1,71 @@
-# For defaults and description of each option, see the link bellow
-# https://github.com/dunst-project/dunst/blob/master/dunstrc
+# Based on ad1822/hyprdots
 
 [global]
-# Display
-follow = mouse
-width = 350
-height = (0, 300)
-origin = top-center
-offset = (0, 35)
-indicate_hidden = yes
-notification_limit = 5
-gap_size = 12
-padding = 12
-horizontal_padding = 20
-frame_width = 1
-sort = no
-layer = top
-
-# Progress bar
-progress_bar_frame_width = 0
-progress_bar_corner_radius = 3
-
-# Colors
-foreground = "#cdd1dc"
-frame_color = "#2d303c"
-highlight = "#2274d5, #82aad9"
-
-# Text
-font = JetBrains Nerd Font 10
-markup = full
-format = "<small>%a</small>\n<big><b>%s</b></big>\n%b"
-alignment = left
-vertical_alignment = center
-show_age_threshold = -1
-hide_duplicate_count = false
-
-# Icon
-# TODO: Need an icon pack installed first! Even the default is missing for me...
-icon_position = left
-min_icon_size = 54
-max_icon_size = 80
-icon_corner_radius = 4
-
-# Misc/Advanced
-# TODO: Leave note in .config that rofi must be set here too!
-dmenu =  "/home/osaal/.config/rofi/scripts/launcher_t5"
-corner_radius = 10
-
-# Mouse
-mouse_left_click = close_current
-mouse_middle_click = do_action, close_current
-mouse_right_click = close_all
+    horizontal_padding = 15
+    text_icon_padding = 15
+    icon_position = "left"
+    min_icon_size = 48
+    max_icon_size = 48
+    progress_bar = true
+    progress_bar_height = 7
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_corner_radius = 2
+    progress_bar_corners = 0
+    progress_bar_max_width = 300
+    separator_height = 2
+    frame_width = 1
+    frame_color = "#45475a"
+    separator_color = "#45475a"
+    corner_radius = 8
+    transparency = 0.5
+    gap_size = 8
+    line_height = 0
+    notification_limit = 0
+    idle_threshold = 120
+    history_length = 20
+    show_age_threshold = 60
+    markup = "full"
+    font = "JetBrains Nerd Font 10";
+    format = "<b>%s</b>\n%b:
+    word_wrap = "yes"
+    sort = "yes"
+    shrink = "no"
+    indicate_hidden = "yes"
+    sticky_history = "no"
+    ignore_newline = "no"
+    show_indicators = "no"
+    stack_duplicates = true
+    always_run_script = true
+    hide_duplicate_count = false
+    ignore_dbusclose = false
+    force_xwayland = false
+    force_xinerama = false
+    mouse_left_click = "do_action"
+    mouse_middle_click = "close_all"
+    mouse_right_click = "close_current"
 
 [urgency_low]
-background = "#383c4af0"
-timeout = 3
+    background = "#11111b"
+    foreground = "#cdd6f4"
+    highlight = "#cba6f7"
+    timeout = 4
 
 [urgency_normal]
-background = "#383c4af0"
-timeout = 8
+    background = "#11111b"
+    foreground = "#cdd6f4"
+    highlight = "#cba6f7"
+    timeout = 6
 
 [urgency_critical]
-background = "#9b4d4bf0"
-frame_color = "#ab6d6b"
-highlight = "#e31e1b, #e37371"
-timeout = 0
+    background = "#11111b"
+    foreground = "#cdd6f4"
+    highlight = "#cba6f7"
+    timeout = 0
 
-# Rules
 [fullscreen_delay_everything]
-fullscreen = show
+    fullscreen = show
 
 [fullscreen_show_critical]
-msg_urgency = critical
-fullscreen = show
+    msg_urgency = critical
+    fullscreen = show
