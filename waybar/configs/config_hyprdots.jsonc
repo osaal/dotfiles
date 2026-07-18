@@ -10,9 +10,12 @@
   "modules-left": [
     "hyprland/workspaces",
     "custom/separator",
+    "custom/separator",
     "cpu",
     "custom/separator",
+    "custom/separator",
     "memory",
+    "custom/separator",
     "custom/separator",
     "network#speed"
   ],
@@ -22,9 +25,9 @@
   "modules-right": [
     "custom/transparency",
     "custom/separator",
-    "temperature#gpu",
     "custom/separator",
     "pulseaudio",
+    "custom/separator",
     "custom/separator",
     "network",
     "battery",
