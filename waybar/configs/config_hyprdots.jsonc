@@ -9,26 +9,14 @@
   "margin-top": 6,
   "modules-left": [
     "hyprland/workspaces",
-    "custom/separator",
-    "custom/separator",
     "cpu",
-    "custom/separator",
-    "custom/separator",
-    "memory",
-    "custom/separator",
-    "custom/separator",
-    "network#speed"
+    "memory"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "custom/transparency",
-    "custom/separator",
-    "custom/separator",
     "pulseaudio",
-    "custom/separator",
-    "custom/separator",
     "network",
     "battery",
     "custom/power"

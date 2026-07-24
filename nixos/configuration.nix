@@ -58,6 +58,11 @@
     enable = true;
   };
 
+  services.upower = {
+    package = pkgs.upower;
+    enable = true;
+  };
+
   services.printing.enable = true;
   services.ipp-usb.enable = true;
 

@@ -59,9 +59,9 @@ hl.bind("XF86AudioMute",                -- Fn + F1
     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),
     { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown",        -- Fn + F7
-    hl.dsp.exec_cmd("sh -c 'brightnessctl set 2%- && ~/.local/bin/brightness.sh'"))
+    hl.dsp.exec_cmd("sh -c 'brightnessctl set 5%-'"))
 hl.bind("XF86MonBrightnessUp",          -- Fn + F8
-    hl.dsp.exec_cmd("sh -c 'brightnessctl set +2% && ~/.local/bin/brightness.sh'"))
+    hl.dsp.exec_cmd("sh -c 'brightnessctl set +5%'"))
 
 -- ── Window Controls ──────────────────────────────────────────────
 bindDsp(mod, "W", hl.dsp.window.close())

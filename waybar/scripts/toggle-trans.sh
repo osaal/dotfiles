@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/bash
 
 CONFIG_FILE="$HOME/.config/hypr/modules/decoration.lua"
 

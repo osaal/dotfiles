@@ -1,6 +1,8 @@
 # Based on ad1822/hyprdots
 
 [global]
+    origin = top-center
+    follow = mouse
     horizontal_padding = 15
     text_icon_padding = 15
     icon_position = "left"
