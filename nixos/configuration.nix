@@ -85,7 +85,7 @@
 
   users.users.osaal = {
     isNormalUser = true;
-    description = "Oliver Saal";
+    description = "Oliver Aspelin-Saal";
     extraGroups = [ "networkmanager" "wheel" "video" ];
   };
 

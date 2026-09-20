@@ -33,7 +33,7 @@ bind(mod, "R", vars.menu)
 bind(mod, "N", vars.quickText)
 
 -- ── Waybar ───────────────────────────────────────────────────────
-bind(altsh, "W", "pkill -9 waybar || waybar &")
+bind(mods, "W", "pkill -9 waybar || waybar &")
 
 -- ── Screenshots ──────────────────────────────────────────────────
 bind(
@@ -43,7 +43,7 @@ bind(
 )
 -- ── Lockscreen ───────────────────────────────────────────────────
 -- TODO: Find a new keybind for screen locking, conflicts with Vim movement
-bind(mod, "L", "hyprlock --grace 5")
+hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("hyprlock --grace 5"))
 
 -- ── Multimedia and Brightness ────────────────────────────────────
 hl.bind("XF86AudioLowerVolume",         -- Dedicated key 1

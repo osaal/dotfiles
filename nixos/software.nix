@@ -23,6 +23,8 @@
         steam   # Vidja
         quarto  # Scientific writing
         unzip   # ...yeah
+        texpresso   # Rendering LaTeX documents in real-time
+        sc      # Terminal spreadsheet editor
     ];
 
     ### System packages ###
@@ -85,7 +87,7 @@
             push.autoSetupRemote = true;
         };
     };
-    # TODO: Switch to `brightnessctl` or `acpilight` by nixpkgs:26.05 - `light` is being removed.
+
     services.actkbd = {
         enable = true;
         bindings = [

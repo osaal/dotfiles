@@ -7,3 +7,4 @@ function y() {
 }
 
 eval "$(direnv hook bash)"
+
